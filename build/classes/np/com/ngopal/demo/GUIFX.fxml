@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.collections.FXCollections?>
+<?import np.com.ngopal.autocomplete.* ?>
+<BorderPane id="AnchorPane" 
+    fx:id="mainPane"
+     xmlns:fx="http://javafx.com/fxml" fx:controller="np.com.ngopal.demo.GUIFX">
+        
+    <top>
+        <StackPane alignment="CENTER_LEFT" >
+            <children>
+                <Rectangle width="2000" height="60" fx:id="rect">
+                    <effect>
+                        <DropShadow offsetY="4" color="#949494"/>
+                    </effect>
+                </Rectangle>
+                <Text fx:id="heading" text="Friends List" style=" -fx-font: 22 Arial;" translateX="30"/>     
+            </children>           
+        </StackPane>
+    </top>
+    <center>
+        <HBox spacing="20" style="-fx-padding:20,20,20,20;">
+           
+            <children>
+                <VBox fx:id="namePane" spacing="10">
+                    <children>
+                        <StackPane >
+                            <children>
+                                <Text fx:id="nameTxt" text="Name List" />
+                                <AutoFillTextBox fx:id="filterName" prefWidth="200" />
+                            </children>
+                        </StackPane>
+                        
+                        <ListView fx:id="nameList">
+                            <effect>
+                                <DropShadow color="gray"/>
+                            </effect>
+                        </ListView>                       
+                    </children>                    
+                </VBox>
+                <VBox fx:id="personPane" spacing="10">
+                    <children>
+                         <StackPane >
+                            <children>
+                                <Text fx:id="personTxt" text="Person List" />
+                                <AutoFillTextBox fx:id="filterPerson" prefWidth="200"/>
+                            </children>
+                        </StackPane>
+                        
+                        <ListView fx:id="personList">
+                           
+                            <effect>
+                                <DropShadow color="gray"/>
+                            </effect>
+                        </ListView>
+                    </children>
+                </VBox>
+                
+            </children>            
+        </HBox>
+    </center>
+</BorderPane>
+

@@ -1,0 +1,34 @@
+/* 
+    Document   : gui
+    Created on : Apr 8, 2012, 11:59:20 AM
+    Author     : Narayan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.main{
+    -fx-background-color : linear-gradient(to bottom, #ecfaff 0%,#b8f5ff 100%);
+    
+}
+
+.list-cell:empty{
+    -fx-background-color : white;
+}
+.rect{
+    -fx-fill : linear-gradient(to bottom, #14a1c0 0%,#0d7d96 100%);
+    
+}
+
+
+.heading{
+    -fx-font: 22 Arial;
+    -fx-fill: white;
+}
+.sub-heading{
+    -fx-font: 15 Arial;
+    -fx-fill: black;
+}
+
+.autocomplete-text{
+    -fx-skin: "np.com.ngopal.autocomplete.AutoFillTextBoxSkin";
+}
